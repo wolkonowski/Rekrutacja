@@ -2,7 +2,7 @@
 <img src="./logo_solvro.png" height="200">
 </div>
 
-# Rekrutacja 2018
+# Rekrutacja
 
 W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a rozwiązanie udostępnij w publicznym repozytorium kodu (np. GitHub). Zadania powinny być rozwiązywane indywidualnie. Masz na nie 2 tygodnie (**22.11.2018**). Link do repozutorium należy umieścić w odpowiednim miejscu w [formularzu rekrutacyjnym](https://goo.gl/forms/azpljosFkwykhiEq1).
 
