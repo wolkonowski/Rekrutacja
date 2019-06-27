@@ -1,105 +1,67 @@
 <div align="center">
-<img src="./logo_solvro.png" height="200">
+<img src="./assets/logo_solvro.png" height="200">
 </div>
 
 # Rekrutacja
 
-W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a rozwiązanie udostępnij w publicznym repozytorium kodu (np. GitHub). Zadania powinny być rozwiązywane indywidualnie. Masz na nie 2 tygodnie (**22.11.2018**). Link do repozutorium należy umieścić w odpowiednim miejscu w [formularzu rekrutacyjnym](https://goo.gl/forms/azpljosFkwykhiEq1).
+W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a rozwiązanie udostępnij w publicznym repozytorium kodu (np. GitHub). Zadania powinny być rozwiązywane indywidualnie. Masz na to 2 tygodnie. Link do repozutorium należy wysłać nam mailem lub przez wiadomość prywantną na Facebooku.
 
 **Powodzenia!**
 
 ## Kategorie:
-* [Frontend](#Frontend)
-* [Design](#Design)
-* [Mobile](#Mobile)
-* [Backend](#Backend)
-* [DevOps](#DevOps)
+
+  - [Frontend](#Frontend)
+  - [Design](#Design)
+  - [Mobile](#Mobile)
+  - [Backend](#Backend)
+  - [DevOps](#DevOps)
 
 <a name="Frontend"></a>
 
 ## Frontend
-### Panel logowania
 
-W [tym repozytorium](https://github.com/Solvro/demoBackend) znajduje się prosty backend dla logowania i rejestracji. Twoim zadaniem jest stworzenie aplikacji webowej umożliwiającej zalogowanie do systemu oraz wylogowanie się. Punktowana będzie obsługa blędów wynikających z np. złych danych logowania, utraty połączenia z serwerem. 
+W [katalogu `./frontend` w tym repozytorium](https://github.com/Solvro/rekrutacja/frontend) znajduje się proste api wraz z opisem endpointów dla poniższego zadania.
 
-:hammer_and_wrench: **Preferowane narzędzia**
+Korzystając z frameworka `React.js`, `Vue.js` lub `Angular` napisz formularz umożliwiający rezerwację lub zakup biletu do kina. 
 
-- Dopuszczone jest używanie frameworków CSS. 
-- Technologia dowolna, aczkolwiek preferowane są frameworki takie jak `Angular`, `React`, czy `Vue.js`. 
+Formularz ma udostępniać opcję **wyboru godziny** (lista godzin zwracana jest przez API), **wyboru miejsca lub kilku miejsc na planie kina** (dostępność miejsc dostępna przez API) oraz **wyboru zniżki** (te można sobie wymyślić :D). Po wypełnieniu powyższych informacji wraz z **danymi kontatowymi** (imię, nazwisko, email, numer telefonu), użytkownik przenoszony jest do **widoku podsumania**, który pozwala przejrzeć i edytować wszystkie pola. 
 
-:heavy_check_mark: **Kryteria oceniania**
-
-- Jakość kodu
-- Interfejs i design
+Dozwolone jest użycie frameworków CSS jak i bibliotek dostępnych w repozytorium NPM. Ocenie podlega wygląd, jakość kodu (między innymi właściwe dla danego frameworka wykorzystanie formularzy) oraz ogólny feeling aplikacji (responsywność, walidacja pól).
 
 <a name="Design"></a>
 
 ## Design
-### Panda Adapter
 
-Zaprojektuj makietę strony internetowej lub aplikacji mobilnej do adopcji pand. Przygotuj wizualizację **przynajmniej dwóch różnych ekranów**. Makieta powinna przedstawiać funkcje aplikacji (np. wyświetlanie pand czekających na adopcję, przeglądanie profilu pandy, wyszukiwarkę etc.). Prace należy oddawać w formie plików obsługiwanych przez preferowane narzędzia, które znajdują się poniżej.
-
-:hammer_and_wrench: **Preferowane narzędzia**
-
-- aplikacje do tworzenia makiet (np. `AdobeXD`, `Sketch`)
-- do grafiki wektorowej (np. `Inkscape`, `Adobe Illustrator`)
-- do grafiki rastrowej (np. `Gimp`, `Photoshop`)
-
-:heavy_check_mark: **Kryteria oceniania**
-
-- okocieszność :heart_eyes_cat:
-- przyjazność interfejsu użytkownika
-- dodatkowe punkty za interaktywność makiety
+TBA.
 
 <a name="Mobile"></a>
 
 ## Mobile
-### Aplikacja Latarka!
 
-Stwórz aplikację latarki jakiej pragnie ten świat, a na jaką nie zasługuje. Funkcjonalność apki jest jak widać prosta, a za razem błyskotliwa :wink: . Po wciśnięciu przycisku lub wykonaniu innej czynności (może wygrana w kółko i krzyżyk?), Twoja aplikacja powinna uruchomić laterkę. 
+Zaprojektuj i napisz aplikację mobilną zawierającą **listę dostępnych produktów spożywczych** w Twojej lodówce!
 
-:hammer_and_wrench: **Preferowane technologie**
+Użytkownik aplikacji powinien mieć możliwość dodawania do listy nowych produktów. Każda pozycja powinna zawierać informacje takie jak: **nazwa produktu**, **liczba sztuk/ilość** i, co najważniejsze, **termin przydatności do spożycia**. Może warto się pokusić o dodanie jakiegoś zdjęcia każdego produktu?
 
-- Totalna dowolność i brak ograniczeń (dużego wyboru i tak nie ma :joy:)
-- No dobra, jest jedno ograniczenie, apka powinna być natywna.
+Zadbaj o pełną funkcjonalność aplikacji:
 
-:heavy_check_mark: **Kryteria oceniania**
+- użytkownik powinien mieć możliwość usunięcia produktu z listy oraz aktualizacji liczby/ilości danego produktu,
+- produkty powinny być sortowane po terminie przydatności do spożycia,
+- lista produktów powinna być pamiętana po zamknięciu aplikacji.
 
-- Funkcjonalność
-- Jakość kodu
+Do przechowywania listy produktów możesz użyć [Firebase'a](https://firebase.google.com/), **SQLite'a** lub innego stosownego rozwiązania.
+
+Aplikację możesz napisać natywnie na systemy **iOS** lub **Android** albo pokusić się o skorzystanie z JSowego frameworka, na przykład **React Native**.
+
+Oceniane będą **jakość kodu** oraz 'feeling' aplikacji (łatwość oraz wygoda użytkowania). Wszelkie własne 'ficzery' mile widziane!
 
 <a name="Backend"></a>
 
 ## Backend
-### Solvro checklist
 
-Zaimplementuj prosty serwer obsługujący zapytania zgodnie z zasadami architektury REST. Aplikacja ma umożliwiać tworzenie i edytowanie list zakupów, planów, itp. zgodnie ze [specyfikacją](./backend_spec.yaml).
-
-:hammer_and_wrench: **Preferowane technologie**
-
-- Najlepiej skorzystać z relacyjnej bazy danych (np. `MariaDB`, `PostgreSQL`) i frameworka do wysokopoziomowego języka (python: `django`, `flask`; js: `express`, `hapi`; java: `spring`)
-- PHP, Java, Assembler i wszelkie inne technologie oczywiście dozwolone.
-
-:heavy_check_mark: **Kryteria oceniania**
-
-- 100% zgodność ze specyfikacją (zagadnienia nie opisane zostawione pod własną interpretację)
-- Jakość kodu
-- Podstawowa odporność na błędne dane, bardzo proste ataki (SQL injection)
+TBA.
 
 <a name="DevOps"></a>
 
 ## DevOps
-### Konteneryzacja stack'a aplikacji
 
-Dostajesz gotową [aplikację](https://github.com/didinj/mean-stack-angular5-crud), jednak trzeba ją przygotować aby była łatwa w przenoszeniu i deploymencie. Nie pozostaje Ci nic innego jak stoworzyć parę kontenerów!
-
-:hammer_and_wrench: **Preferowane technologie**
-
-- `Docker` - Wykorzystywany w **Solvro** system konteneryzacji
-- `docker-compose` - Rozwiązanie pozwalające spiąć ze soba kontenery aby ułatwić proces developmentu i deploymentu
-- Preferowane bazowanie na obrazach: `nodejs`, `mongodb`(aby podać właściwy adres serwisu wymagana jest mała modyfikacja w kodzie) opcjonalnie można dodać `nginx`(do serwowania buildu frontend'u).
-
-:heavy_check_mark: **Kryteria oceniania**
-
-- Cała aplikacja ma działać, na kadżym z komputerów jaki jest wykorzystywany przez członków **Solvro**, po wpisaniu komend `docker-compose build` oraz `docker-compose up`
-- Po wyłączeniu kontenerów, w szczególności bazy danych, kiedy znowu uruchomimy wszystkie aplikację żadne dane zapisane w bazie nie mogą wyparować.
+TBA.
