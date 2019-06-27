@@ -20,7 +20,7 @@ W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, �
 
 ## Frontend
 
-W [katalogu `./frontend` w tym repozytorium](https://github.com/Solvro/rekrutacja/frontend) znajduje się proste api wraz z opisem endpointów dla poniższego zadania.
+W [katalogu `./frontend` w tym repozytorium](https://github.com/Solvro/rekrutacja/tree/master/frontend) znajduje się proste api wraz z opisem endpointów dla poniższego zadania.
 
 Korzystając z frameworka `React.js`, `Vue.js` lub `Angular` napisz formularz umożliwiający rezerwację lub zakup biletu do kina. 
 
