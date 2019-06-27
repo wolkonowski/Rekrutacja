@@ -20,11 +20,11 @@ W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, �
 
 ## Frontend
 
-W [katalogu `./frontend` w tym repozytorium](https://github.com/Solvro/rekrutacja/tree/master/frontend) znajduje się proste api wraz z opisem endpointów dla poniższego zadania.
+_W [katalogu `./frontend` w tym repozytorium](https://github.com/Solvro/rekrutacja/tree/master/frontend) znajduje się proste API wraz z opisem endpointów dla poniższego zadania._
 
 Korzystając z frameworka `React.js`, `Vue.js` lub `Angular` napisz formularz umożliwiający rezerwację lub zakup biletu do kina. 
 
-Formularz ma udostępniać opcję **wyboru godziny** (lista godzin zwracana jest przez API), **wyboru miejsca lub kilku miejsc na planie kina** (dostępność miejsc dostępna przez API) oraz **wyboru zniżki** (te można sobie wymyślić :D). Po wypełnieniu powyższych informacji wraz z **danymi kontatowymi** (imię, nazwisko, email, numer telefonu), użytkownik przenoszony jest do **widoku podsumania**, który pozwala przejrzeć i edytować wszystkie pola. 
+Formularz ma udostępniać opcję **wyboru godziny** (lista godzin zwracana jest przez API), **wyboru miejsca lub kilku miejsc na planie kina** (dostępność miejsc dostępna przez API) oraz **wyboru zniżki** (te można sobie wymyślić :wink:). Po wypełnieniu powyższych informacji wraz z **danymi kontatowymi** (imię, nazwisko, email, numer telefonu), użytkownik przenoszony jest do **widoku podsumania**, który pozwala przejrzeć i edytować wszystkie pola. 
 
 Dozwolone jest użycie frameworków CSS jak i bibliotek dostępnych w repozytorium NPM. Ocenie podlega wygląd, jakość kodu (między innymi właściwe dla danego frameworka wykorzystanie formularzy) oraz ogólny feeling aplikacji (responsywność, walidacja pól).
 
@@ -40,7 +40,7 @@ TBA.
 
 Zaprojektuj i napisz aplikację mobilną zawierającą **listę dostępnych produktów spożywczych** w Twojej lodówce!
 
-Użytkownik aplikacji powinien mieć możliwość dodawania do listy nowych produktów. Każda pozycja powinna zawierać informacje takie jak: **nazwa produktu**, **liczba sztuk/ilość** i, co najważniejsze, **termin przydatności do spożycia**. Może warto się pokusić o dodanie jakiegoś zdjęcia każdego produktu?
+Użytkownik aplikacji powinien mieć możliwość dodawania do listy nowych produktów. Każda pozycja powinna zawierać informacje takie jak: **nazwa produktu**, **liczba sztuk / ilość** i, co najważniejsze, **termin przydatności do spożycia**. Może warto się pokusić o dodanie jakiegoś zdjęcia każdego produktu?
 
 Zadbaj o pełną funkcjonalność aplikacji:
 
