@@ -10,8 +10,8 @@ Fake cinema API for KN Solvro recruitment task.
 
 ## Endpoints
 
-1. GET http://localhost:1337/ping
-1. POST http://localhost:1337/movie
+1. GET http://localhost:5000/ping
+1. POST http://localhost:5000/movie
 
 ## Requests
 
@@ -22,7 +22,7 @@ Movie number must be provided. Sample movie number: `78483421`.
 Success:
 
 ```sh
-$ curl http://localhost:1337/movie \
+$ curl http://localhost:5000/movie \
   -H "Content-Type: application/json" \
   -X POST \
   -d '{"movie":"78483421"}'
