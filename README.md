@@ -58,7 +58,20 @@ Oceniane będą **jakość kodu** oraz 'feeling' aplikacji (łatwość oraz wygo
 
 ## Backend
 
-TBA.
+Wyobraź sobie, że piszesz backend do **aplikacji imitującej JakDojade**!
+
+W [pliku](./backend/solvro_city.json) JSON dostaniesz zapisaną mapę przystanków w Solvro City. Napisz część serwisu odpowiadającą za rejestrację i logowanie się użytkownika oraz za podawanie informacji o przystankach i najkrótszej trasy pomiędzy dwoma z nich. O sposobie podawania tych informacji powie Ci [specyfikacja](./backend/stops_api.yaml) (część z wyznaczaniem trasy wykonaj bez używania zewnętrznych bibliotek)
+
+Do Twojej dyspozycji dajemy [skrypt](./backend/city_generator.py), który generuje mapę miasta i zapisuję ją do pliku. Możesz go użyć do testowania swojego API dla różnych map.
+
+Na koniec zadbaj o **przejrzyste readme**.
+
+Nice to have:
+ - łatwość odpalania Twojego kodu niezależnie od środowiska (serdecznie polecamy Dockera)
+ - swagger wygenerowany z kodu na wybranym porcie :-)
+
+
+Oceniana będzie jakość kodu, jego dokumentacja, rozwiązanie postawionego problemu, użycie odpowiednich technologii, odporność na podstawowe ataki oraz błędne dane (które nie są zawarte w specyfikacji) i praca z systemem kontroli wersji.
 
 <a name="DevOps"></a>
 
