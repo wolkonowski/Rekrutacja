@@ -43,7 +43,7 @@ Zadbaj, aby makieta uwzględniała podane funkcjonalności:
 - Aktualne zapełnienie jest publicznie dostępne
 - Użytkownik ma prawo zmienić wybrane lokum
 
-Dodatkowo, aplikacja powinna korzystać z podanej **palety barw** i być w pełni **responsywna**.
+Dodatkowo, aplikacja powinna korzystać z podanej [palety barw](./assets/palette.png) i być w pełni **responsywna**.
 
 Przykładowe narzędzia
 - aplikacje do tworzenia makiet (np. `AdobeXD`, `Sketch`)
