@@ -4,7 +4,7 @@
 
 # Rekrutacja
 
-W ramach rekrutacji stworzyliśmy cztery zadania z czterech różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a rozwiązanie udostępnij w publicznym repozytorium kodu (np. GitHub). Zadania powinny być rozwiązywane indywidualnie. Masz na to 2 tygodnie. Link do repozytorium należy wysłać poprzez [formularz rekrutacyjny](https://forms.gle/E8Svq7M2t9NR8HyS9).
+W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a rozwiązanie udostępnij w publicznym repozytorium kodu (np. GitHub). Zadania powinny być rozwiązywane indywidualnie. Masz na to 2 tygodnie. Link do repozytorium należy wysłać poprzez [formularz rekrutacyjny](https://forms.gle/E8Svq7M2t9NR8HyS9).
 
 **Powodzenia!**
 
@@ -14,6 +14,7 @@ W ramach rekrutacji stworzyliśmy cztery zadania z czterech różnych kategorii,
   - [Design](#Design)
   - [Mobile](#Mobile)
   - [Backend](#Backend)
+  - [Machine Learning](#ML)
 
 <a name="Frontend"></a>
 
@@ -89,5 +90,15 @@ Nice to have:
  - łatwość odpalania Twojego kodu niezależnie od środowiska (serdecznie polecamy Dockera)
  - swagger wygenerowany z kodu na wybranym porcie :-)
 
-
 Oceniana będzie jakość kodu, jego dokumentacja, rozwiązanie postawionego problemu, użycie odpowiednich technologii, odporność na podstawowe ataki oraz błędne dane (które nie są zawarte w specyfikacji) i praca z systemem kontroli wersji.
+
+<a name="ML"></a>
+
+## Machine Learning
+
+Wyobraź sobie, że tworzymy **aplikację śledzącą sposób odżywiania się danej osoby**. Przy każdym posiłku ma ona za zadanie zrobić zdjęcie potrawie. Jedną z jej funkcji jest pilnowanie, czy użytkownik nie zaczyna jeść za dużo śmieciowego jedzenia i tutaj potrzebujemy Twojej pomocy!
+
+Używając odpowiednich narzędzi, skonstruuj **model do klasyfikacji dań zdrowych i fastfoodów**! Twoim zadaniem na początek jest zebranie datasetu, następnie wytrenowanie modelu i ewaluacja tego, jak sobie radzi!
+
+Oceniane będzie dobranie odpowiednich narzędzi do zadania, wybranie odpowiedniego modelu do postawionego zadania (nie musisz zamykać się na Deep Learning, jeśli uważasz, że model typowo MLowy wystarczy droga wolna), a także graficzne przedstawienie całego procesu od pozyskania danych ich ewentualnej obróbki po ewaluację.
+**UWAGA** to jak model sobie radzi nie będzie oceniane (tzn. nie ma różnicy, czy to będzie skuteczność na poziomie 90%, czy 95%, natomiast na pewno warto by była ona przyzwoita).
