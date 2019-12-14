@@ -4,7 +4,7 @@
 
 # Rekrutacja
 
-W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a rozwiązanie udostępnij w publicznym repozytorium kodu (np. GitHub). Zadania powinny być rozwiązywane indywidualnie. Masz na to 2 tygodnie. Link do repozytorium należy wysłać poprzez [formularz rekrutacyjny](https://forms.gle/E8Svq7M2t9NR8HyS9).
+W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a rozwiązanie udostępnij w publicznym repozytorium kodu (np. GitHub). Zadania powinny być rozwiązywane indywidualnie. Masz na to 2 tygodnie. Link do repozytorium należy wysłać nam mailem lub przez wiadomość prywantną na Facebooku.
 
 **Powodzenia!**
 
