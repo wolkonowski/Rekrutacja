@@ -22,9 +22,9 @@ W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, �
 
 _W [katalogu `./frontend` w tym repozytorium](https://github.com/Solvro/rekrutacja/tree/master/frontend) znajduje się proste API wraz z opisem endpointów dla poniższego zadania._
 
-Korzystając z frameworka `React.js`, `Vue.js` lub `Angular` napisz formularz umożliwiający rezerwację lub zakup biletu do kina. 
+Korzystając z frameworka `React.js`, `Vue.js` lub `Angular` napisz formularz umożliwiający rezerwację lub zakup biletu do kina.
 
-Formularz ma udostępniać opcję **wyboru godziny** (lista godzin zwracana jest przez API), **wyboru miejsca lub kilku miejsc na planie kina** (dostępność miejsc dostępna przez API) oraz **wyboru zniżki** (te można sobie wymyślić :wink:). Po wypełnieniu powyższych informacji wraz z **danymi kontatowymi** (imię, nazwisko, email, numer telefonu), użytkownik przenoszony jest do **widoku podsumania**, który pozwala przejrzeć i edytować wszystkie pola. 
+Formularz ma udostępniać opcję **wyboru godziny** (lista godzin zwracana jest przez API), **wyboru miejsca lub kilku miejsc na planie kina** (dostępność miejsc dostępna przez API) oraz **wyboru zniżki** (te można sobie wymyślić :wink:). Po wypełnieniu powyższych informacji wraz z **danymi kontaktowymi** (imię, nazwisko, email, numer telefonu), użytkownik przenoszony jest do **widoku podsumowania**, który pozwala przejrzeć i edytować wszystkie pola.
 
 Dozwolone jest użycie frameworków CSS jak i bibliotek dostępnych w repozytorium NPM. Ocenie podlega wygląd, jakość kodu (między innymi właściwe dla danego frameworka wykorzystanie formularzy) oraz ogólny feeling aplikacji (responsywność, walidacja pól).
 
@@ -32,27 +32,27 @@ Dozwolone jest użycie frameworków CSS jak i bibliotek dostępnych w repozytori
 
 ## Design
 
-Zaprojektuj makietę aplikacji webowej, pozwalającej na **zapisywanie się w pokojach na rajdy PWr**!
+Zaprojektuj makietę aplikacji internetowej, pozwalającej na **zapisywanie się w pokojach na rajdy PWr**!
 
-Twoim zadaniem jest przygotowanie jedynie części serwisu odpowiedzialnej za 
-**rezerwację wybranego lokum** i **przeglądanie listy dostępnych pokoi**, wraz z informacją o ich zapełnieniu. Dla ułatwienia, pomijamy tutaj najmniej emocjonujące ekrany (typu logowanie).
+Twoim zadaniem jest przygotowanie ekranu odpowiedzialnego za **przeglądanie listy dostępnych pokoi** i widoku **rezerwacji wybranego lokum**. Oba ekrany powinny być przedstawione w wersji zarówno **mobilnej, jak i na przeglądarki**.
 
 Zadbaj, aby makieta uwzględniała podane funkcjonalności:
-- Każdy pokój na liście posiada swoją nazwę lub numer
+- Zapisany na rajd student ma możliwość rezerwacji tylko jednego miejsca w hotelu
+- Użytkownik ma prawo zmienić wybrane wcześniej lokum
+- Każdy pokój na liście posiada swój numer
 - Pokoje mieszczą różną liczbę osób
 - Wszystkie, bez względu na dostępność, wyświetlają się na liście
 - Aktualne zapełnienie jest publicznie dostępne
-- Użytkownik ma prawo zmienić wybrane lokum
 
-Dodatkowo, aplikacja powinna korzystać z podanej [palety barw](./assets/palette.png) i być w pełni **responsywna**.
+Aplikacja powinna korzystać z [danego koloru wiodącego, wraz z jego odcieniami](./assets/palette.png).  
+Cała skala szarości jest również do Twojej dyspozycji.
 
-Przykładowe narzędzia
-- aplikacje do tworzenia makiet (np. `AdobeXD`, `Sketch`)
+Przykładowe narzędzia:
+- aplikacje do tworzenia makiet (np. `Figma`, `AdobeXD`)
 - do grafiki wektorowej (np. `Inkscape`, `Adobe Illustrator`)
 - do grafiki rastrowej (np. `Gimp`, `Photoshop`)
 
 Oceniany będzie wygląd aplikacji i przyjazność interfejsu użytkownika.
-
 
 <a name="Mobile"></a>
 
