@@ -48,7 +48,7 @@ $ curl http://localhost:5000/movie \
 
 ### Sessions
 
-Seance hours available under the `sessions` field, are provided with timenstamps.
+Seance hours available under the `sessions` field, are provided with timestamps.
 
 ### Arrangement
 
