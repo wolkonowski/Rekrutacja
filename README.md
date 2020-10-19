@@ -60,21 +60,23 @@ Oceniany będzie wygląd aplikacji i przyjazność interfejsu użytkownika.
 
 ## Mobile
 
-Zaprojektuj i napisz aplikację mobilną zawierającą **listę dostępnych produktów spożywczych** w Twojej lodówce!
+Zaprojektuj i napisz aplikację, umożliwiającą wyświetlanie informacji na temat serialu **Rick and Morty!** Pamiętaj, że podczas oceniania będą brane pod uwagę zarówno **jakość kodu,** jak i **“feeling”** aplikacji. Dodatkowa inwencja twórcza jest jak najbardziej mile widziana, dlatego nie bój się **zagłębić w dokumentację i zaproponować autorskie rozwiązania! :)** 
 
-Użytkownik aplikacji powinien mieć możliwość dodawania do listy nowych produktów. Każda pozycja powinna zawierać informacje takie jak: **nazwa produktu**, **liczba sztuk / ilość** i, co najważniejsze, **termin przydatności do spożycia**. Może warto się pokusić o dodanie jakiegoś zdjęcia każdego produktu?
+Aplikacje możesz stworzyć natywnie na **Androida, IOSa,** bądź wykorzystać multiplatformowe rozwiązanie np. **React Native,** z użyciem takich technologii, jakich tylko zapragniesz :).
 
-Zadbaj o pełną funkcjonalność aplikacji:
+Do uzyskania danych skorzystaj z [otwartego API serialu](https://rickandmortyapi.com/documentation/):
+- pobierz oraz wyświetl listę postaci (https://rickandmortyapi.com/api/character/),
+- po kliknięciu pozycji na liście aplikacja powinna wyświetlić szczegóły wybranej postaci,
+- dodaj możliwość filtrowania postaci po statusie (alive, dead or unknown),
+- dodaj możliwość przeszukiwania listy po nazwie odcinka,
+- w przypadku braku połączenia z internetem aplikacja powinna wyświetlać listę (może być tylko częściowa) ostatnio załadowanych postaci
+- użytkownik powinien mieć możliwość dodania postaci do ulubionych,
+- użytkownik powinien mieć możliwość wyświetlenia listy ulubionych bohaterów.
 
-- użytkownik powinien mieć możliwość usunięcia produktu z listy oraz aktualizacji liczby/ilości danego produktu,
-- produkty powinny być sortowane po terminie przydatności do spożycia,
-- lista produktów powinna być pamiętana po zamknięciu aplikacji.
+Jeśli wciąż Ci mało (a mamy taką nadzieję! :)) możesz rozbudować swoją aplikację o dodanie **nowych funkcjonalności,** np. wyświetlenie listy odcinków bohatera. Wzbogać widoki np. przez dodanie **dark mode’a** i animacji.
 
-Do przechowywania listy produktów możesz użyć [Firebase'a](https://firebase.google.com/), **SQLite'a** lub innego stosownego rozwiązania.
+Dokumentacja API jest do Twojej dyspozycji, także **nie wahaj się eksperymentować z rozwiązaniami! :)**
 
-Aplikację możesz napisać natywnie na systemy **iOS** lub **Android** albo pokusić się o skorzystanie z JSowego frameworka, na przykład **React Native**.
-
-Oceniane będą **jakość kodu** oraz 'feeling' aplikacji (łatwość oraz wygoda użytkowania). Wszelkie własne 'ficzery' mile widziane!  
 **Czas na wykonanie tego zadania to 2 tygodnie.**
 <a name="Backend"></a>
 
