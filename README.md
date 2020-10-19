@@ -4,7 +4,7 @@
 
 # Rekrutacja
 
-W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a rozwiązanie udostępnij w publicznym repozytorium kodu (np. GitHub). Zadania powinny być rozwiązywane indywidualnie. Link do repozytorium należy wysłać nam mailem lub przez wiadomość prywantną na Facebooku. W razie jakichkolwiek pytań nie bójcie się ich zadawać za pośrednictwem fanpage'u facebooku :)  
+W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a rozwiązanie udostępnij w publicznym repozytorium kodu (np. GitHub). Zadania powinny być rozwiązywane indywidualnie. [Link do repozytorium należy wysłać przez formularz zgłoszeniowy](https://docs.google.com/forms/d/e/1FAIpQLSdCl0sjuxdFbsFIp-jsfvIMJ2HUvD36R-D-jgogOl1ymq8HkQ/viewform). W razie jakichkolwiek pytań nie bójcie się ich zadawać za pośrednictwem fanpage'u facebooku :)  
   
 **Niezależnie od decyzji przyjęcia, każdemu kandydatowi zostanie zwrócony feedback odnośnie jego rozwiązania zadania.**  
 
