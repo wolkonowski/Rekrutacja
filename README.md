@@ -2,7 +2,7 @@
 <img src="./assets/logo_solvro.png" height="200">
 </div>
 
-## TERMIN SKŁADANIA PRAC: 25.10.2021
+## TERMIN SKŁADANIA PRAC: 25.03.2021
 
 # Rekrutacja
 
