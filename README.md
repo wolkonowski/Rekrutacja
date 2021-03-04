@@ -2,6 +2,8 @@
 <img src="./assets/logo_solvro.png" height="200">
 </div>
 
+## TERMIN SKŁADANIA PRAC: 25.10.2021
+
 # Rekrutacja
 
 W ramach rekrutacji stworzyliśmy pięć zadań z pięciu różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a rozwiązanie udostępnij w publicznym repozytorium kodu (np. GitHub). Zadania powinny być rozwiązywane indywidualnie. [Link do repozytorium należy wysłać przez formularz zgłoszeniowy](https://docs.google.com/forms/d/e/1FAIpQLSdCl0sjuxdFbsFIp-jsfvIMJ2HUvD36R-D-jgogOl1ymq8HkQ/viewform). W razie jakichkolwiek pytań nie bójcie się ich zadawać za pośrednictwem fanpage'u facebooku :)  
@@ -29,7 +31,7 @@ Korzystając z frameworka `React.js`, `Vue.js` lub `Angular` napisz formularz um
 Formularz ma udostępniać opcję **wyboru godziny** (lista godzin zwracana jest przez API), **wyboru miejsca lub kilku miejsc na planie kina** (dostępność miejsc dostępna przez API) oraz **wyboru zniżki** (te można sobie wymyślić :wink:). Po wypełnieniu powyższych informacji wraz z **danymi kontaktowymi** (imię, nazwisko, email, numer telefonu), użytkownik przenoszony jest do **widoku podsumowania**, który pozwala przejrzeć i edytować wszystkie pola.
 
 Dozwolone jest użycie frameworków CSS jak i bibliotek dostępnych w repozytorium NPM. Ocenie podlega wygląd, jakość kodu (między innymi właściwe dla danego frameworka wykorzystanie formularzy) oraz ogólny feeling aplikacji (responsywność, walidacja pól).  
-**Czas na wykonanie tego zadania to 2 tygodnie.**
+
 <a name="Design"></a>
 
 ## Design
@@ -55,7 +57,7 @@ Przykładowe narzędzia:
 - do grafiki rastrowej (np. `Gimp`, `Photoshop`)
 
 Oceniany będzie wygląd aplikacji i przyjazność interfejsu użytkownika.  
-**Czas na wykonanie tego zadania to 2 tygodnie.**
+
 <a name="Mobile"></a>
 
 ## Mobile
@@ -77,7 +79,6 @@ Jeśli wciąż Ci mało (a mamy taką nadzieję! :)) możesz rozbudować swoją 
 
 Dokumentacja API jest do Twojej dyspozycji, także **nie wahaj się eksperymentować z rozwiązaniami! :)**
 
-**Czas na wykonanie tego zadania to 2 tygodnie.**
 <a name="Backend"></a>
 
 ## Backend
@@ -95,7 +96,6 @@ Nice to have:
  - swagger wygenerowany z kodu na wybranym porcie :-)
 
 Oceniana będzie jakość kodu, jego dokumentacja, rozwiązanie postawionego problemu, użycie odpowiednich technologii, odporność na podstawowe ataki oraz błędne dane (które nie są zawarte w specyfikacji) i praca z systemem kontroli wersji.  
-**Czas na wykonanie tego zadania to 2 tygodnie.**
 <a name="ML"></a>
 
 ## Machine Learning
@@ -106,4 +106,3 @@ Używając odpowiednich narzędzi, skonstruuj **model do przewidywania współrz
 
 **UWAGA** to jak model sobie radzi nie będzie oceniane (tzn. nie ma różnicy, czy to będzie skuteczność na poziomie 90%, czy 95%, natomiast na pewno warto by była ona przyzwoita).  
 
-**Czas na wykonanie tego zadania to 3 tygodnie.**
