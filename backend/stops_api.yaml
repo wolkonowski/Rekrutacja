@@ -31,13 +31,13 @@ paths:
           name: source
           required: true
           schema:
-            type: string
+            type: integer
           description: Stop where the path begins
         - in: query
           name: target
           required: true
           schema:
-            type: string
+            type: integer
           description: Stop where the path ends
       responses:
         '200':
