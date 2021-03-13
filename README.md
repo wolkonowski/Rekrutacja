@@ -1,10 +1,11 @@
+
 <div align="center">
 <img src="./assets/logo_solvro.png" height="200">
 </div>
 
 # Rekrutacja
 
-W ramach rekrutacji stworzyliśmy cztery zadania z czterech różnych kategorii, żeby każdy znalazł coś dla siebie. Wybierz **jedno** zadanie, a [link do rozwiązania prześlij przez formularz zgłoszeniowy](https://forms.gle/ZgieC3G2VDBEQQEv6). Rozwiązania zadań z kategorii **Mobile** i **Frontend** udostępnij w publicznym repozytorium kodu (np. Github). W przypadku rozwiązań z kategorii **Design** i **Grafika** pozostawiamy pełną dowolność - możesz umieścić je zarówno w chmurze, hostingu jak i w dowolnym serwisie na którym robisz projekt. Zadania powinny być rozwiązywane indywidualnie.
+W ramach rekrutacji stworzyliśmy trzy zadania z trzech różnych kategorii. Wybierz **jedno** zadanie, a [link do rozwiązania prześlij przez formularz zgłoszeniowy](https://forms.gle/ZgieC3G2VDBEQQEv6). Rozwiązanie zadania z kategorii **Mobile** udostępnij w publicznym repozytorium kodu (np. Github). W przypadku rozwiązań z kategorii **Design** i **Grafika** pozostawiamy pełną dowolność - możesz umieścić je zarówno w chmurze, hostingu jak i w dowolnym serwisie na którym robisz projekt. Zadania powinny być rozwiązywane indywidualnie.
 W razie jakichkolwiek pytań nie bójcie się ich zadawać za pośrednictwem fanpage'a na facebooku :)  
   
 **Niezależnie od decyzji przyjęcia, każdemu kandydatowi zostanie zwrócony feedback odnośnie jego rozwiązania zadania.**  
@@ -13,21 +14,9 @@ W razie jakichkolwiek pytań nie bójcie się ich zadawać za pośrednictwem fan
 
 ## Kategorie:
 
-  - [Frontend](#Frontend)
   - [Mobile](#Mobile)
   - [Design](#Design)
   - [Grafika](#Grafika)
-<a name="Frontend"></a>
-
-## Frontend
-
-_W [katalogu `./frontend` w tym repozytorium](https://github.com/Solvro/rekrutacja/tree/master/frontend) znajduje się proste API wraz z opisem endpointów dla poniższego zadania._
-
-Korzystając z frameworka `React.js`, `Vue.js` lub `Angular` napisz formularz umożliwiający rezerwację lub zakup biletu do kina.
-
-Formularz ma udostępniać opcję **wyboru godziny** (lista godzin zwracana jest przez API), **wyboru miejsca lub kilku miejsc na planie kina** (dostępność miejsc dostępna przez API) oraz **wyboru zniżki** (te można sobie wymyślić :wink:). Po wypełnieniu powyższych informacji wraz z **danymi kontaktowymi** (imię, nazwisko, email, numer telefonu), użytkownik przenoszony jest do **widoku podsumowania**, który pozwala przejrzeć i edytować wszystkie pola.
-
-Dozwolone jest użycie frameworków CSS jak i bibliotek dostępnych w repozytorium NPM. Ocenie podlega wygląd, jakość kodu (między innymi właściwe dla danego frameworka wykorzystanie formularzy) oraz ogólny feeling aplikacji (responsywność, walidacja pól).  
 
 <a name="Mobile"></a>
 
@@ -56,7 +45,7 @@ Dokumentacja API jest do Twojej dyspozycji, także **nie wahaj się eksperymento
 
 Zaprojektuj makietę aplikacji internetowej lub mobilnej, pozwalającej na **zapisywanie się w pokojach na rajdy PWr**!
 
-Twoim zadaniem jest przygotowanie ekranu odpowiedzialnego za **przeglądanie listy dostępnych pokoi** i widoku **rezerwacji wybranego lokum**. W przypadku projektu aplikacji internetowej oba ekrany powinny być przedstawione w wersji zarówno **mobilnej, jak i na przeglądarki**.
+Twoim zadaniem jest przygotowanie ekranu odpowiedzialnego za **przeglądanie listy dostępnych pokoi** i widoku **rezerwacji wybranego lokum**. 
 
 Zadbaj, aby makieta uwzględniała podane funkcjonalności:
 - Zapisany na rajd student ma możliwość rezerwacji tylko jednego miejsca w hotelu
