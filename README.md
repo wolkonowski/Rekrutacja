@@ -107,11 +107,11 @@ W [pliku](./backend/seats.json) JSON znajduje się lista stolików w restauracji
 
 ### Endpointy do zaimplementowania:
 
-Wszystkie endpointy powinny być zaimplementowane zgodnie z [specyfikacją](./backend/speci).
+Wszystkie endpointy powinny być zaimplementowane zgodnie z [specyfikacją](./backend/api-spec.yaml).
 
 #### Składanie rezerwacji.
 
-- Ścieżka: `/new-booking`.
+- Ścieżka: `/new-reservation`.
 - Endpoint pozwala klientowi na złożenie nowej rezerwacji na stolik.
 - Istotne jest, aby przed zapisaniem rezerwacji sprawdzić poprawność wszystkich danych, oraz dostępność stolika w wybranym czasie.
 - Po udanej rezerwacji należy wysłać wiadomość na podany przez użytkownika adres e-mail. W wiadomości powinny znaleźć się wszystkie dane oraz unikalny numer rezerwacji. Do wysyłania "fake maili" skorzystaj z [Ethereal](https://ethereal.email/).
@@ -124,20 +124,20 @@ Wszystkie endpointy powinny być zaimplementowane zgodnie z [specyfikacją](./ba
 
 #### Pobranie listy rezerwacji danego dnia
 
-- Ścieżka: `/get-reservations`
+- Ścieżka: `/get-resevations`
 - Endpoint pozwala pracownikom restauracji na pobranie listy wszystkich rezerwacji danego dnia.
 
 #### Anulowanie rezerwacji
 
-- Ścieżka: `/cancel-reservation`
-- Endpoint pozwala klientowi na anulowanie rezerwacji.
+- Ścieżka: `/request-cancellation`
+- Endpoint pozwala klientowi na wysłanie prośby o anulowanie rezerwacji.
 - Użytkownik w treści zapytania wysyła unikalne id rezerwacji, które otrzymał na maila.
 - Rezerwacja może zostać anulowana najpóźniej 2 godziny przed godziną na którą został zarezerwowany stolik.
 - Po złożeniu prośby o anulowanie należy wysłać maila z 6-cyfrowym kodem weryfikacyjnym w celu dodatkowego potwierdzenia tożsamości.
 
 #### Potwierdzenie anulowania rezerwacji
 
-- Ścieżka `/confirm-cancellation`
+- Ścieżka `/verify-cancellation`
 - Endpoint służy do potwierdzenia anulowania rezerwacji.
 - W treści zapytania użytkownik wysyła kod weryfikacyjny, który otrzymał w widomości e-mail.
 - Po zweryfikowaniu kodu, należy usunąć rezerwację z bazy danych i potwierdzić anulowanie e-mailem.

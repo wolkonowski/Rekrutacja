@@ -1,20 +1,27 @@
 openapi: 3.0.0
 info:
-  title: Solvro backend recruitment task - API for booking tables in a restaurant
+  title: Solvro backend recruitment task - API for reserving tables in a restaurant
   version: 1.0.0
 paths:
-  /new-booking:
+  /new-reservation:
     post:
-      summary: Creates a new booking for a table.
+      summary: Creates a new reservation for a table.
       requestBody:
         required: true
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Booking"
+              $ref: "#/components/schemas/Reservation"
       responses:
         "201":
-          description: New booking created.
+          description: New reservation created.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reservationId:
+                    type: string
   /get-free-tables:
     post:
       summary: "Returns a list of all available tables based on the given time and number of people."
@@ -23,10 +30,21 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/GetFreeTablesBody"
+              type: object
+              properties:
+                date:
+                  type: string
+                duration:
+                  type: string
+                numberOfSeats:
+                  type: number
       responses:
         "200":
           description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ListOfTables"
   /get-reservations:
     post:
       summary: "Returns a list of all reservations for the given date"
@@ -35,42 +53,86 @@ paths:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/BookingArray"
+              type: object
+              properties:
+                date:
+                  type: string
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ListOfReservations"
+  /request-cancellation:
+    post:
+      summary: "Requests a cancellation of the reservation"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                reservationId:
+                  type: number
+      responses:
+        "200":
+          description: "OK"
+  /verify-cancellation:
+    post:
+      summary: "Confirms the cancellation by checking the verification code"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                verificationCode:
+                  type: number
       responses:
         "200":
           description: "OK"
 components:
   schemas:
-    Booking:
+    Reservation:
       type: object
       properties:
         date:
           type: string
         duration:
           type: number
-        seat-number:
+        seatNumber:
           type: number
-        full-name:
+        fullName:
           type: string
         phone:
           type: string
-        e-mail:
+        email:
           type: string
-        number-of-seats:
+        numberOfSeats:
           type: number
-    GetFreeTablesBody:
-      type: object
-      properties:
-        date:
-          type: string
-        duration:
-          type: string
-        number-of-seats:
-          type: number
-    BookingArray:
+    ListOfReservations:
       type: object
       properties:
         bookings:
           type: array
           items:
-            $ref: "#/components/schemas/Booking"
+            $ref: "#/components/schemas/Reservation"
+    Table:
+      type: object
+      properties:
+        number:
+          type: number
+        minNumberOfSeats:
+          type: number
+        maxNumberOfSeats:
+          type: number
+    ListOfTables:
+      type: object
+      properties:
+        tables:
+          type: array
+          items:
+            $ref: "#/components/schemas/Table"
