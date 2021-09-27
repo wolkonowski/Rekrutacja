@@ -1,0 +1,76 @@
+openapi: 3.0.0
+info:
+  title: Solvro backend recruitment task - API for booking tables in a restaurant
+  version: 1.0.0
+paths:
+  /new-booking:
+    post:
+      summary: Creates a new booking for a table.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Booking"
+      responses:
+        "201":
+          description: New booking created.
+  /get-free-tables:
+    post:
+      summary: "Returns a list of all available tables based on the given time and number of people."
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GetFreeTablesBody"
+      responses:
+        "200":
+          description: "OK"
+  /get-reservations:
+    post:
+      summary: "Returns a list of all reservations for the given date"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BookingArray"
+      responses:
+        "200":
+          description: "OK"
+components:
+  schemas:
+    Booking:
+      type: object
+      properties:
+        date:
+          type: string
+        duration:
+          type: number
+        seat-number:
+          type: number
+        full-name:
+          type: string
+        phone:
+          type: string
+        e-mail:
+          type: string
+        number-of-seats:
+          type: number
+    GetFreeTablesBody:
+      type: object
+      properties:
+        date:
+          type: string
+        duration:
+          type: string
+        number-of-seats:
+          type: number
+    BookingArray:
+      type: object
+      properties:
+        bookings:
+          type: array
+          items:
+            $ref: "#/components/schemas/Booking"
