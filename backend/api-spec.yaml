@@ -3,7 +3,7 @@ info:
   title: Solvro backend recruitment task - API for reserving tables in a restaurant
   version: 1.0.0
 paths:
-  /new-reservation:
+  /reservation:
     post:
       summary: Creates a new reservation for a table.
       requestBody:
@@ -22,22 +22,27 @@ paths:
                 properties:
                   reservationId:
                     type: string
-  /get-free-tables:
-    post:
+  /tables/:
+    get:
       summary: "Returns a list of all available tables based on the given time and number of people."
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                date:
-                  type: string
-                duration:
-                  type: string
-                numberOfSeats:
-                  type: number
+      parameters:
+        - in: query
+          name: status
+          schema:
+            type: string
+        - in: query
+          name: min_seats
+          schema:
+            type: number
+        - in: query
+          name: start_date
+          schema:
+            type: string
+        - in: query
+          name: duration
+          schema:
+            type: string
+
       responses:
         "200":
           description: "OK"

@@ -111,7 +111,7 @@ Wszystkie endpointy powinny być zaimplementowane zgodnie z [specyfikacją](./ba
 
 #### Składanie rezerwacji.
 
-- Ścieżka: `/new-reservation`.
+- POST: `/reservation`.
 - Endpoint pozwala klientowi na złożenie nowej rezerwacji na stolik.
 - Istotne jest, aby przed zapisaniem rezerwacji sprawdzić poprawność wszystkich danych, oraz dostępność stolika w wybranym czasie.
 - Po udanej rezerwacji należy wysłać wiadomość na podany przez użytkownika adres e-mail. W wiadomości powinny znaleźć się wszystkie dane oraz unikalny numer rezerwacji. Do wysyłania "fake maili" skorzystaj z [Ethereal](https://ethereal.email/).
@@ -119,17 +119,17 @@ Wszystkie endpointy powinny być zaimplementowane zgodnie z [specyfikacją](./ba
 
 #### Pobranie listy wolnych stolików
 
-- Ścieżka: `/get-free-tables`
+- GET: `/table`
 - Endpoint pozwala klientowi na pobranie listy wszystkich dostępnych do rezerwacji stolików w określonym czasie i z odpowiednią liczbą miejsc.
 
 #### Pobranie listy rezerwacji danego dnia
 
-- Ścieżka: `/get-resevations`
+- GET: `/resevation`
 - Endpoint pozwala pracownikom restauracji na pobranie listy wszystkich rezerwacji danego dnia.
 
 #### Anulowanie rezerwacji
 
-- Ścieżka: `/request-cancellation`
+- POST: `/cancellation`
 - Endpoint pozwala klientowi na wysłanie prośby o anulowanie rezerwacji.
 - Użytkownik w treści zapytania wysyła unikalne id rezerwacji, które otrzymał na maila.
 - Rezerwacja może zostać anulowana najpóźniej 2 godziny przed godziną na którą został zarezerwowany stolik.
@@ -137,7 +137,7 @@ Wszystkie endpointy powinny być zaimplementowane zgodnie z [specyfikacją](./ba
 
 #### Potwierdzenie anulowania rezerwacji
 
-- Ścieżka `/verify-cancellation`
+- PUT `/cancellation`
 - Endpoint służy do potwierdzenia anulowania rezerwacji.
 - W treści zapytania użytkownik wysyła kod weryfikacyjny, który otrzymał w widomości e-mail.
 - Po zweryfikowaniu kodu, należy usunąć rezerwację z bazy danych i potwierdzić anulowanie e-mailem.
