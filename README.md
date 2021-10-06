@@ -131,7 +131,7 @@ Wszystkie endpointy powinny być zaimplementowane zgodnie z [specyfikacją](./ba
 
 - POST: `/cancellation`
 - Endpoint pozwala klientowi na wysłanie prośby o anulowanie rezerwacji.
-- Użytkownik w treści zapytania wysyła unikalne id rezerwacji, które otrzymał na maila.
+- Użytkownik w treści zapytania wysyła unikalne id rezerwacji, które otrzymał w wiadomości e-mail.
 - Rezerwacja może zostać anulowana najpóźniej 2 godziny przed godziną na którą został zarezerwowany stolik.
 - Po złożeniu prośby o anulowanie należy wysłać maila z 6-cyfrowym kodem weryfikacyjnym w celu dodatkowego potwierdzenia tożsamości.
 
