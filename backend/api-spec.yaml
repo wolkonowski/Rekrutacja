@@ -14,7 +14,7 @@ paths:
               $ref: "#/components/schemas/Reservation"
       responses:
         "201":
-          description: New reservation created.
+          description: "Created"
           content:
             application/json:
               schema:
@@ -22,7 +22,65 @@ paths:
                 properties:
                   reservationId:
                     type: string
-  /tables/:
+    get:
+      summary: "Returns a list of all reservations for the given date"
+      parameters:
+        - in: query
+          name: date
+          schema:
+            type: string
+      responses:
+        "200":
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ListOfReservations"
+  /reservation/{id}:
+    put:
+      summary: "Requests a cancellation of the reservation"
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+                  example: "requested cancellation"
+      responses:
+        "200":
+          description: "Success"
+
+    delete:
+      summary: "Confirms the cancellation request by hecking the verification code"
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                verificationCode:
+                  type: string
+      responses:
+        "200":
+          description: "Success"
+
+  /table:
     get:
       summary: "Returns a list of all available tables based on the given time and number of people."
       parameters:
@@ -50,55 +108,6 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ListOfTables"
-  /get-reservations:
-    post:
-      summary: "Returns a list of all reservations for the given date"
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                date:
-                  type: string
-      responses:
-        "200":
-          description: "OK"
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/ListOfReservations"
-  /request-cancellation:
-    post:
-      summary: "Requests a cancellation of the reservation"
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                reservationId:
-                  type: number
-      responses:
-        "200":
-          description: "OK"
-  /verify-cancellation:
-    post:
-      summary: "Confirms the cancellation by checking the verification code"
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                verificationCode:
-                  type: number
-      responses:
-        "200":
-          description: "OK"
 components:
   schemas:
     Reservation:

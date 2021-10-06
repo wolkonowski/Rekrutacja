@@ -107,37 +107,38 @@ W [pliku](./backend/seats.json) JSON znajduje się lista stolików w restauracji
 
 ### Endpointy do zaimplementowania:
 
-Wszystkie endpointy powinny być zaimplementowane zgodnie z [specyfikacją](./backend/api-spec.yaml).
+Wszystkie endpointy powinny być zaimplementowane zgodnie z [specyfikacją](./backend/api-spec.yaml). Pamiętaj, że specyfikacja API niekoniecznie musi obejmować wszystkie możliwe kody odpowiedzi HTTP.
 
 #### Składanie rezerwacji.
 
-- POST: `/reservation`.
+- Zapytanie POST: `/reservation`.
 - Endpoint pozwala klientowi na złożenie nowej rezerwacji na stolik.
 - Istotne jest, aby przed zapisaniem rezerwacji sprawdzić poprawność wszystkich danych, oraz dostępność stolika w wybranym czasie.
 - Po udanej rezerwacji należy wysłać wiadomość na podany przez użytkownika adres e-mail. W wiadomości powinny znaleźć się wszystkie dane oraz unikalny numer rezerwacji. Do wysyłania "fake maili" skorzystaj z [Ethereal](https://ethereal.email/).
 - Należy zwrócić właściwą odpowiedź HTTP i zapisać rezerwację bazie danych.
 
-#### Pobranie listy wolnych stolików
-
-- GET: `/table`
-- Endpoint pozwala klientowi na pobranie listy wszystkich dostępnych do rezerwacji stolików w określonym czasie i z odpowiednią liczbą miejsc.
-
 #### Pobranie listy rezerwacji danego dnia
 
-- GET: `/resevation`
+- Zapytanie GET: `/reservation`
 - Endpoint pozwala pracownikom restauracji na pobranie listy wszystkich rezerwacji danego dnia.
 
-#### Anulowanie rezerwacji
+#### Wysłanie prośby o anulowanie rezerwacji
 
-- POST: `/cancellation`
+- Zapytanie PUT: `/reservation/{id}`
 - Endpoint pozwala klientowi na wysłanie prośby o anulowanie rezerwacji.
-- Użytkownik w treści zapytania wysyła unikalne id rezerwacji, które otrzymał w wiadomości e-mail.
+- Użytkownik w parametrze zapytania wysyła unikalne id rezerwacji, które otrzymał na maila.
+- W treści zapytania wysyłana jest prośba o zmianę statusu rezerwacji na wartość "requested cancellation".
 - Rezerwacja może zostać anulowana najpóźniej 2 godziny przed godziną na którą został zarezerwowany stolik.
-- Po złożeniu prośby o anulowanie należy wysłać maila z 6-cyfrowym kodem weryfikacyjnym w celu dodatkowego potwierdzenia tożsamości.
+- Jeśli anulwanie jest możliwe należy wysłać wiadomość e-mail na adres użytkownika. W treści maila należy umieścić 6-cyfrowy kod weryfikacyjny, który służy do potwierdzenia tożsamości.
 
 #### Potwierdzenie anulowania rezerwacji
 
-- PUT `/cancellation`
+- Zapytanie DELETE: `/reservation/{id}`
 - Endpoint służy do potwierdzenia anulowania rezerwacji.
 - W treści zapytania użytkownik wysyła kod weryfikacyjny, który otrzymał w widomości e-mail.
-- Po zweryfikowaniu kodu, należy usunąć rezerwację z bazy danych i potwierdzić anulowanie e-mailem.
+- Jeżeli kod jest poprawny i możliwe jest anulowanie rezerwacji, to należy usunąć ją z bazy danych i potwierdzić anulowanie e-mailem.
+
+#### Pobranie listy wolnych stolików
+
+- Zapytanie GET: `/table`
+- Endpoint pozwala klientowi na pobranie listy wszystkich dostępnych do rezerwacji stolików w określonym czasie i z odpowiednią liczbą miejsc.
