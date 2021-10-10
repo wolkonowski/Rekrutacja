@@ -11,7 +11,7 @@ W ramach rekrutacji stworzyliśmy cztery zadania z czterech różnych kategorii:
   - [Backend](./backend/zadanie.md)
   - [Machine Learning](./machine_learning/zadanie.md)
 
-Termin wykonania zadań z kategorii **Frontend**, **Mobile** oraz **Backend** to **25.10 23:59**, natomiast termin wykonania zadania z kategorii **Machine Learning** to **02.11 23:59**.
+Termin wykonania zadań to **25.10 23:59**.
 
 Wybierz **jedno** zadanie, a rozwiązanie udostępnij nam w postaci pull requestu ([instrukcja tutaj](#forktutorial)). Zadania powinny być rozwiązywane indywidualnie. [Link do pull requestu należy wysłać przez formularz zgłoszeniowy](https://forms.gle/6baysgGyRhC1KeSD8). W razie jakichkolwiek pytań nie bójcie się ich zadawać za pośrednictwem fanpage'u facebooku :)  
 
