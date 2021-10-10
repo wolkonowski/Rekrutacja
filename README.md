@@ -1,6 +1,7 @@
 <div align="center">
 <img src="./assets/logo_solvro.png" height="200">
 </div>
+
 # Rekrutacja
 
 W ramach rekrutacji stworzyliśmy cztery zadania z czterech różnych kategorii:
