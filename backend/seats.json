@@ -13,7 +13,7 @@
         {
             "number": 3,
             "minNumberOfSeats": 6,
-            "numberOfSeats": 8
+            "maxNumberOfSeats": 8
         },
         {
             "number": 4,
