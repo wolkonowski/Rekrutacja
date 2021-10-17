@@ -1,6 +1,6 @@
 # Machine learning 
 
-**Termin wykonania zadania: 25.10 23:59**
+**Termin wykonania zadania:** <del>25.10 23:59</del> **31.10 23:59** - termin został przedłużony!
 
 Wyobraź sobie, że chcesz zaprojektować system dla autonomicznego auta. Jest to 
 skomplikowane zadanie, u którego podstaw stoi inteligentna obserwacja otoczenia. Twoim 

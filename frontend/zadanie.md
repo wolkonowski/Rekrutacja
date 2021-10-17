@@ -1,6 +1,6 @@
 # Frontend
 
-**Termin wykonania zadania: 25.10 23:59**
+**Termin wykonania zadania:** <del>25.10 23:59</del> **31.10 23:59** - termin został przedłużony!
 
 Zaprojektuj i napisz aplikację, której celem będzie wyświetlanie newsów o lotach kosmicznych! Pamiętaj, że podczas oceniania będą brane pod uwagę zarówno jakość kodu, jak i “feeling” aplikacji. Dodatkowa inwencja twórcza jest jak najbardziej mile widziana, dlatego nie bój się zagłębić w dokumentację i zaproponować autorskie rozwiązania! :)
 
