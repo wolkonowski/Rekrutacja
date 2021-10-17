@@ -1,6 +1,6 @@
 # Backend
 
-**Termin wykonania zadania: 25.10 23:59**
+**Termin wykonania zadania:** <del>25.10 23:59</del> **31.10 23:59** - termin został przedłużony!
 
 Napisz API do zarządzania rezerwacjami stolików w restauracji.
 
