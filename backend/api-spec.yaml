@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Solvro backend recruitment task - API for reserving tables in a restaurant
-  version: 1.0.0
+  version: 1.0.1
 paths:
   /reservations:
     post:
@@ -27,6 +27,7 @@ paths:
       parameters:
         - in: query
           name: date
+          description: Date in ISO 8061 format.
           schema:
             type: string
       responses:
@@ -88,6 +89,8 @@ paths:
           name: status
           schema:
             type: string
+          description: Table status. If the query is to return free tables, the parameter value should be set to "free". 
+          example: "free"
         - in: query
           name: min_seats
           schema:
@@ -96,6 +99,7 @@ paths:
           name: start_date
           schema:
             type: string
+          description: Date in ISO 8601 format.
         - in: query
           name: duration
           schema:
@@ -115,6 +119,7 @@ components:
       properties:
         date:
           type: string
+          description: Date in ISO 8061 format.
         duration:
           type: number
         seatNumber:
