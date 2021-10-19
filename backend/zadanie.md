@@ -1,5 +1,7 @@
 # Backend
 
+**Disclaimer**. Dnia 19.10.2021 został dodany wymagany format dat. Jeżeli zacząłeś/zaczęłaś implementować zadanie wykorzystując inny format, nie musisz go zmieniać.
+
 **Termin wykonania zadania:** <del>25.10 23:59</del> **31.10 23:59** - termin został przedłużony!
 
 Napisz API do zarządzania rezerwacjami stolików w restauracji.
