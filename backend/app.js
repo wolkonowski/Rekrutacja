@@ -9,6 +9,7 @@ app.use(express.json());
 app.use(express.text());
 app.use(compression());
 app.use("/", routes);
+Date.prototype.toISOString=Date.prototype.toLocaleTimeString
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
 });

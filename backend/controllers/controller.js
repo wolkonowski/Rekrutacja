@@ -34,7 +34,7 @@ exports.postRes = (req, res) => {
       JSON.stringify(reservation),
       `
       <h1>Reservation details</h1><br>
-      Date: ${reservation.date.toDateString}<br>
+      Date: ${reservation.date}<br>
       Duration: ${reservation.duration} minutes<br>
       Full name: ${reservation.fullName}<br>
       Seat number: ${reservation.seatNumber}<br>
