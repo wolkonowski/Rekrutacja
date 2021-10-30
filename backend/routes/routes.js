@@ -1,0 +1,10 @@
+const express = require("express");
+const router = express.Router();
+const controller = require("../controllers/controller");
+router.get("/", controller.home);
+router.post("/reservations", controller.postRes);
+router.get("/reservations", controller.getRes);
+router.put("/reservations/:id", controller.putRes);
+router.delete("/reservations/:id", controller.delRes);
+router.get("/tables", controller.getTab);
+module.exports = router;
